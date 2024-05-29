@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Pessoa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Cadastro de Pessoa</h1>
+<form action="#" method="post">
+    <table>
+        <tr>
+            <th colspan="2">Dados Pessoais</th>
+        </tr>
+        <tr>
+            <td>Nome:</td>
+            <td><input type="text" name="nome" required></td>
+        </tr>
+        <tr>
+            <td>Email:</td>
+            <td><input type="email" name="email" required></td>
+        </tr>
+        <tr>
+            <td>Telefone:</td>
+            <td><input type="tel" name="telefone" required></td>
+        </tr>
+        <tr>
+            <td>Sexo:</td>
+            <td>
+                <input type="radio" name="sexo" value="masculino"> Masculino
+                <input type="radio" name="sexo" value="feminino"> Feminino
+                <input type="radio" name="sexo" value="outro"> Outro
+            </td>
+        </tr>
+        <tr>
+            <td>Data de Nascimento:</td>
+            <td><input type="date" name="data_nascimento" required></td>
+        </tr>
+        <tr>
+            <td>Endereço:</td>
+            <td><textarea name="endereco" rows="3" required></textarea></td>
+        </tr>
+        <tr>
+            <td>Cidade:</td>
+            <td><input type="text" name="cidade" required></td>
+        </tr>
+        <tr>
+            <td>Estado:</td>
+            <td>
+                <select name="estado" required>
+                    <option value="">Selecione...</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <!-- outros estados -->
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>País:</td>
+            <td>
+                <select name="pais" size="3" required>
+                    <option value="br">Brasil</option>
+                    <option value="us">Estados Unidos</option>
+                    <option value="ca">Canadá</option>
+                    <option value="uk">Reino Unido</option>
+                    <!-- outros países -->
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <th colspan="2">Preferências</th>
+        </tr>
+        <tr>
+            <td>Idiomas:</td>
+            <td>
+                <input type="checkbox" name="idiomas" value="portugues"> Português
+                <input type="checkbox" name="idiomas" value="ingles"> Inglês
+                <input type="checkbox" name="idiomas" value="espanhol"> Espanhol
+                <input type="checkbox" name="idiomas" value="frances"> Francês
+            </td>
+        </tr>
+        <tr>
+            <td>Hobbies:</td>
+            <td>
+                <input type="text" name="hobbies" placeholder="Ex: Ler, Esportes, etc.">
+            </td>
+        </tr>
+        <tr>
+            <td>Receber Newsletter:</td>
+            <td>
+                <input type="radio" name="newsletter" value="sim"> Sim
+                <input type="radio" name="newsletter" value="nao"> Não
+            </td>
+        </tr>
+        <tr>
+            <td>Enviar foto:</td>
+            <td><input type="file" name="foto"></td>
+        </tr>
+        <tr>
+            <td>Comentários:</td>
+            <td><textarea name="comentarios" rows="5"></textarea></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="submit" value="Cadastrar">
+                <input type="reset" value="Limpar">
+            </td>
+        </tr>
+    </table>
+</form>
+
+</body>
+</html>
